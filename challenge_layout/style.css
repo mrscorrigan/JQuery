@@ -86,16 +86,11 @@ div{
 }
 
 .makeRed{
-	display: flex;
-	box-sizing:border-box;
-	border-radius: 4px;
-	display: block;
-	width: 100%;
 	background-color:red;
-	text-align: center;
-	padding: 1em .75em;
-	text-decoration: none;
-	color: #fff;
+}
+
+.makeBorder{
+	border: 2px;
 }
 
 #my_footer{

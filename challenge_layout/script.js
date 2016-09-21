@@ -54,14 +54,23 @@ $(document).ready(function() {
 
 /* $("button").click(function(){
         $(this).siblings("p").slideToggle("medium");
-	});*/ //toggle between hide and show////slide toggle between hide and show//
+	});*/ //slide toggle between hide and show//
 	
-$("button").mouseenter(function(){
-$(this).fadeTo(1000, 0.5); 
-  });
+/*$("button").mouseenter(function(){
+$(this).removeClass("makeRed"); 
+  });*/ //changing the colours of a button
 
-$("button").mouseleave(function(){
-$(this).fadeTo(1000, 1); 
-  });
+/*$("button").mouseleave(function(){
+$(this).addClass("makeBorder"); 
+  });*/ // changing the border of the button on mouse leave
+
+$("button").click( function() {
+	console.log ( $(this).siblings("p") );
+ 	$(this).siblings("p").slideToggle("medium");
+ });
+
+//  $("button").click(function(){
+//  $(this).siblings("p").slideDown("medium");
+// 	});
 
 });
