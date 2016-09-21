@@ -28,12 +28,12 @@ $(document).ready(function() {
 });
 	
 
-	$("a.bottom_button").hover(function(){
+	/*$("button").hover(function(){
         $(this).css("background-color", "#31A5CC");
     }, function(){
     $(this).css("background-color", "rgba(129, 187, 201,.85)");
 
-});
+});*/
 
 	$("h2").hover(function(){
 		$(this).addClass("header_hover");
@@ -41,9 +41,27 @@ $(document).ready(function() {
 		$(this).removeClass("header_hover");
 	});
 
-	$("a.bottom_button").hover(function(){
+	/*$("button").hover(function(){
         $("body").css("background-color", "black");
     }, function(){
     $("body").css("background-color", "grey");
-});
+});*/ //using classes instead of .css//
+
+ /* $("button").click(function(){
+        $(this).siblings("p").toggle("medium");
+	});*/ //toggle between hide and show//
+
+
+/* $("button").click(function(){
+        $(this).siblings("p").slideToggle("medium");
+	});*/ //toggle between hide and show////slide toggle between hide and show//
+	
+$("button").mouseenter(function(){
+$(this).fadeTo(1000, 0.5); 
+  });
+
+$("button").mouseleave(function(){
+$(this).fadeTo(1000, 1); 
+  });
+
 });

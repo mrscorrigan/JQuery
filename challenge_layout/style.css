@@ -38,7 +38,6 @@ div{
 	padding: 1em .75em;
 	text-decoration: none;
 	color: #fff;
-
 }
 
 .card_bottom{
@@ -52,8 +51,7 @@ div{
 	flex:1 0 auto;
 }
 
-#container
-{
+#container{
 	display: flex;		/* makes container a flexbox*/
 	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
 	box-sizing:border-box;
@@ -61,10 +59,13 @@ div{
 	margin-left:auto;
 	max-width:1050px;	
 }
+
 #logo{
 	width: 800px;
 	margin: auto;
 }
+
+
 
 .card{
 	flex:1; /* */
@@ -75,6 +76,7 @@ div{
 	padding: 20px;
 	background-color: #fff;
 }
+
 .highlight_stream{
 	background-color: #EB5255;
 }
@@ -83,7 +85,18 @@ div{
 	font-size: 40px;
 }
 
-
+.makeRed{
+	display: flex;
+	box-sizing:border-box;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	background-color:red;
+	text-align: center;
+	padding: 1em .75em;
+	text-decoration: none;
+	color: #fff;
+}
 
 #my_footer{
 	width:100%;
