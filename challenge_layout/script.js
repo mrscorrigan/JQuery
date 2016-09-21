@@ -41,5 +41,9 @@ $(document).ready(function() {
 		$(this).removeClass("header_hover");
 	});
 
-
+	$("a.bottom_button").hover(function(){
+        $("body").css("background-color", "black");
+    }, function(){
+    $("body").css("background-color", "grey");
+});
 });
